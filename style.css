@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+	background-color: antiquewhite;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	height: 65px;
+	background-color: black;
+	color: white;
+}
+
+nav ul li {
+	padding: 0 12px;
+}
+
+.brand img {
+	width: 44px;
+	padding: 0 8px;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+
+.container {
+	min-height: 10vh;
+	background-color: black;
+	color: white;
+	font-family: 'Varela Round', sans-serif;
+	display: flex;
+	margin: 18px auto;
+	width: 90%;
+	border-radius: 12px;
+	padding: 34px;
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.bottom {
+	position: sticky;
+	bottom: 0;
+	height: 80px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.icons {
+	margin-top: 20px;
+}
+
+.icons i {
+	cursor: pointer;
+	font-size: 30px;
+}
+
+#myProgressBar {
+	width: 80vw;
+	cursor: pointer;
+
+}
+
+.songItemContainer {
+	margin-top: 24px;
+}
+
+.songItem {
+	height: 28px;
+	display: flex;
+	background-color: white;
+	color: black;
+	margin: 12px 0;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 34px;
+	background-color: rgb(185, 182, 145);
+}
+
+.songList h1 {
+	color: chartreuse;
+}
+
+.songItem img {
+	width: 27px;
+	margin: 0 23px;
+	border-radius: 34px;
+}
+
+.timestamp {
+	margin: 0 23px;
+}
+
+.timestamp i {
+	cursor: pointer;
+}
+
+.songInfo {
+	position: absolute;
+	left: 10vw;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+	opacity: 0;
+	transition: opacity 0.4s ease-in;
+}
+
+/* media queries */
+
+@media (min-width:375px) and (max-width:667px) {
+	.container {
+		width: 78%;
+	}
+
+	.songList h1 {
+		color: chartreuse;
+		font-size: 16px;
+	}
+}
+
+@media (min-width:360px) and (max-width:740px) {
+	.container {
+		width: 78%;
+	}
+
+	.songList h1 {
+		color: chartreuse;
+		font-size: 16px;
+	}
+}
+
+@media (min-width:412px) and (max-width:915px) {
+	.songItemContainer {
+		width: 107%;
+	}
+}
+
+@media (min-width:414px) and (max-width:896px) {
+	.songList {
+		padding-left: 17px;
+	}
+}
+
+@media (min-width:820px) and (max-width:1180px) {
+	.songItemContainer {
+		width: 102%;
+		margin-left: 22px;
+	}
+
+	.songList h1 {
+		margin-left: 23px;
+	}
+}
+
+@media (min-width: 912px) and (max-width: 1368px) {
+	.songItemContainer {
+		width: 139%;
+		margin-left: 52px;
+	}
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+	.songItemContainer {
+		width: 110%;
+		margin-left: 15px;
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 412px) and (max-width: 914px) {
+	.container {
+		width: 79%;
+	}
+
+	.songItemContainer {
+		width: 298px;
+	}
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+	.container {
+		width: 89%;
+	}
+	.songItemContainer {
+		width: 124%;
+		margin-left: -10px
+	}
+
+	.songList h1 {
+		margin-left: 23px;
+	}
+}
+
+@media (min-width:390px) and (max-width:844px) {
+	.songList {
+		padding-left: 12px;
+	}
+}
+ 
+@media (min-width:600px) and (max-width:1024px) {
+	.container {
+		background-size: cover;
+	}
+
+	.songItemContainer {
+		width: 71%;
+		margin-left: 22px;
+	}
+} 
